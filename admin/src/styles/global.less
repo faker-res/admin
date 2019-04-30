@@ -1,0 +1,427 @@
+// 需要全局的样式，写在这里
+@import "./color.less";
+@import "./scrollbar.less";
+
+//表格头样式
+// /deep/.ivu-table-column-center{
+// 	/deep/.ivu-table-cell{
+// 		/deep/span{
+// 			color: red!important;
+// 		}
+// 	}
+// }
+
+// 列表页
+.v2-search {
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	input{
+		border-radius: 0px!important;
+	}
+
+	
+	.ivu-form-item-content {
+		float: left;
+	}
+
+	.date-divide {
+		display: inline-block;
+		width: 10px;
+		height: 1px;
+		background: #e4e4e4;
+		vertical-align: middle;
+		margin: 0 10px;
+	}
+
+	.icon-tishi {
+		vertical-align: middle;
+		margin-left: 14px;	
+	}
+
+	.ivu-form-item {
+		margin-right: 0;
+		margin-bottom: 10px !important;
+		margin-left: 20px;
+		&:first-child{
+			margin-left: 0px;
+		}
+		.ivu-form-item-label{
+      padding: 11.2px  12px  5px 0;
+		}
+		.ivu-form-item-content{
+			height: 30px;
+			
+      .ivu-date-picker{
+        height: 30px;
+        .ivu-date-picker-rel{
+            .ivu-input-wrapper{
+              input{
+                height: 30px;
+              }
+              .ivu-input{
+								height: 30px !important;
+								line-height: 30px;
+              }
+            }
+        }
+      }
+      .ivu-input-wrapper{
+        .ivu-input{
+          height: 30px !important;
+        } 
+			}
+			.ivu-checkbox-wrapper{
+				margin-top: 2px;
+			}
+    }
+	}
+	.s-50 {
+		width: 50px;
+	}
+	.s-86 {
+		width: 86px;
+	}
+
+	.s-100 {
+		width: 100px;
+	}
+
+	.s-120 {
+		width: 120px;
+	}
+
+	.s-140 {
+		width: 140px;
+	}
+
+	.s-150 {
+		width: 145px;
+	}
+
+	.s-160 {
+		width: 160px;
+	}
+	.s-180{
+		width: 180px;
+	}
+	
+	.s-260 {
+		width: 260px;
+	}
+	.s-320 {
+		width: 320px;
+	}
+	
+	.s-340 {
+		width: 340px;
+	}
+	.s320{
+		width: 320px;
+	}
+
+	.s-195 {
+		width: 195px;
+		height: 36px;
+		background: #fff;
+		border-radius: 5px;
+		margin-right: 20px;
+	}
+
+
+	/deep/.ivu-btn {
+		font-size: 16px;
+		padding: 0;
+		line-height: 30px;
+		span{
+			vertical-align: 0;
+		}
+
+		&.search {
+			width: 80px;
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+		.ivu-select {
+		.ivu-select-selection {
+			border-color: #dcdcdc !important;
+			height: 30px !important;
+			.ivu-select-selected-value {
+				height: 30px !important;
+	      line-height: 30px;
+			}
+			.ivu-select-placeholder {
+				height: 30px !important;
+				line-height: 30px !important;
+			}
+		}
+	}
+
+}
+
+.v2-button {
+	// padding-bottom: 20px;
+	// padding-top: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	button {
+		margin-right: 20px;
+		height: 30px;
+	span{
+		display: inline-block;
+		height: 30px;
+		margin-top:-1px;
+	}
+
+	}
+
+	.ivu-btn {
+		border-color: @btnColor;
+		color: @btnColor;
+	}
+}
+
+.v3-button {
+	padding-bottom: 20px;
+	button {
+		margin-right: 20px;
+	}
+
+	.ivu-btn {
+		border-color: @btnColor;
+		color: @btnColor;
+	}
+}
+
+.v2-table {
+	.ivu-table-header{
+		thead{
+			th{
+				// background: linear-gradient(top, #f7f2f2 0%, #ffffff 30%, #ffffff 70%, #f7f2f2  100%);
+				.ivu-table-cell{
+					span{
+						font-size: 16px;
+						font-weight: normal;
+					}
+				}
+				
+			}
+		}
+	}
+	.ivu-table-tbody{
+		.tr{
+			.td{
+				.ivu-table-cell{
+					font-size: 14px;
+				}
+			}		
+		}
+	}
+	.ivu-table-tip{
+		overflow-x: hidden; 
+    overflow-y: hidden;
+	}
+	
+	.v2-tag {
+		margin: 0;
+		padding: 0;
+		height: 30px;
+		line-height: 30px;
+		width: 80px;
+		background: #fff;
+	}
+}
+
+// 详情页
+.v2-details {
+	@h: 40px;
+
+	.items {
+		.title {
+			height: @h;
+			line-height: @h;
+		}
+
+		.section {
+			&.gray-bg {
+				background: #f6f6f8;
+			}
+
+			.row {
+				.col {
+					height: @h;
+					line-height: @h;
+				}
+			}
+		}
+
+		.remarks {
+			height: @h;
+			line-height: @h;
+		}
+
+		// 银行卡
+		.bank-card {
+			@cw: 300px;
+			@ch: 120px;
+			width: @cw;
+			height: @ch;
+			padding: 10px;
+			position: relative;
+			border: 1px solid @tableBorderColor;
+			border-radius: 5px;
+			background: #fff;
+
+			.icon-morenyinhangqia {
+				position: absolute;
+				top: -22px;
+				right: -10px;
+			}
+
+			.bank-name {
+				.logo {
+					height: 40px;
+				}
+			}
+		}
+	}
+}
+
+//编辑页
+.v2-edit {
+	@h: 40px;
+
+	.items {
+		.title {
+			height: @h;
+			line-height: @h;
+		}
+	}
+
+	.section {
+		.ivu-form-item-content {
+			float: left;
+			margin-left: 0 !important;
+		}
+
+		.ivu-form-item {
+			margin-right: 0;
+		}
+
+		.s-140 {
+			width: 140px;
+		}
+		.s-150 {
+			width: 150px;
+		}
+		.s-160 {
+			width: 160px;
+		}
+		.s-200 {
+			width: 200px;
+		}
+    .s-346{
+      width: 346px;
+    }
+		.s-436 {
+			width: 436px;
+		}
+		.s-450 {
+			width: 450px;
+		}
+	}
+}
+
+// 弹窗内容居中
+.v2-form-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+// ivu-collapse
+.ivu-collapse > .ivu-collapse-item > .ivu-collapse-header {
+	color: @baseFontColor;
+}
+
+// ivu-select
+
+
+// ivu-tag
+.ivu-tag {
+	text-align: center;
+	border: 1px solid @tagBorderColor;
+	border-radius: 0!important;
+}
+
+// ivu-input
+.ivu-input {
+	border-color: #dcdcdc;
+	height: 36px;
+	color: @baseFontColor;
+}
+
+// ivu-form
+.ivu-form .ivu-form-item-label {
+	color: @baseFontColor;
+}
+
+
+.ivu-form-item-error-tip {
+	// width: fit-content;  fit-content属性不兼容ie
+	width:180px;
+	font-size: 12px;
+	padding-left: 10px;
+	// top: 0;
+	// left: 280px;
+	// line-height: 36px;
+	// padding-top: 0;
+}
+
+// ivu-table
+.ivu-table-cell {
+	padding: 0;
+	color: @baseFontColor;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+// modal滚动条
+.modal-overflow {
+	max-height: 500px;
+	overflow-y: auto;
+}
+//内部轨道 滚动条
+.modal-overflow::-webkit-scrollbar-thumb{
+		border-radius: 5px;
+	  -webkit-box-shadow:inset 0 0 8px rgba(240,255,255,.5);
+	  background: #f6f6f8;
+	  border: 1px solid #d3d3d3;
+  }
+  .modal-overflow::-webkit-scrollbar{
+		width: 6px;
+		border: none;
+	}
+	.modal-overflow::-webkit-scrollbar-track-piece{
+		-webkit-box-shadow:inset 0 0 8px #ffffff;
+		background: #dcdcdc;
+		border-radius: 3px;
+	}
+.redText {
+	color: #ff2626;
+}
+.redBg {
+	background: #ff2626;
+}
+.blueBg {
+	background: rgb(19, 143, 201);
+}
+
+
+// 模态框里面的行间距,统一为20
+.ivu-form{
+	.ivu-form-item{
+		margin-bottom: 20px;
+	}
+}

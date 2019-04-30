@@ -1,0 +1,976 @@
+@import './color.less';
+@import './function.less';
+
+// 公共class
+//鼠标经过样式
+.cs {
+  cursor: pointer;
+}
+
+// clear float
+.clearfix::after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+
+// float
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+// 百分比宽度
+.w5 {
+  width: 5%;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w11 {
+  width: 11%;
+}
+
+.w12 {
+  width: 12%;
+}
+
+.w13 {
+  width: 13%;
+}
+
+.w15 {
+  width: 15%;
+}
+
+.w16 {
+  width: 16%;
+}
+
+.w18 {
+  width: 18%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w28 {
+  width: 28%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w33 {
+  width: 33%;
+}
+
+.w34 {
+  width: 34%;
+}
+
+.w35 {
+  width: 35%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w45 {
+  width: 45%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w70 {
+  width: 70%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.w90 {
+  width: 90%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+// 固定宽度
+.w40x {
+  width: 40px;
+}
+
+.w50x {
+  width: 50px;
+}
+
+.w64x {
+  width: 64px;
+}
+
+.w60x {
+  width: 60px;
+}
+
+.w70x {
+  width: 70px;
+}
+
+.w80x {
+  width: 80px;
+}
+
+.w90x {
+  width: 90px;
+}
+
+.w100x {
+  width: 100px;
+  height: 30px;
+}
+
+.w110x {
+  width: 110px;
+}
+
+.w120x {
+  width: 120px;
+}
+
+.w130x {
+  width: 130px;
+}
+
+.w135x {
+  width: 135px;
+}
+
+.w140x {
+  width: 140px;
+}
+
+.w148x {
+  width: 148px;
+}
+
+.w160x {
+  width: 160px;
+}
+
+.w165x {
+  width: 165px;
+}
+
+.w190x {
+  width: 190px;
+}
+
+.w200x {
+  width: 200px;
+}
+
+.w260x {
+  width: 260px;
+}
+
+.w275x {
+  width: 275px;
+}
+
+.w280x {
+  width: 280px;
+}
+
+.w290x {
+  width: 290px;
+}
+
+.w300x {
+  width: 300px;
+}
+
+.w310x {
+  width: 310px;
+}
+
+.w320x {
+  width: 320px;
+}
+
+.w330x {
+  width: 330px;
+}
+
+.w340x {
+  width: 340px;
+}
+
+.w360x {
+  width: 360px;
+}
+
+.w370x {
+  width: 370px;
+}
+.w379x{
+  width: 379px;
+}
+.w600x {
+  width: 600px;
+}
+
+.w609x {
+  width: 609px;
+}
+
+.w690x {
+  width: 690px;
+}
+
+.btw260 {
+  width: 260px;
+  height: 50px;
+}
+
+// 高度
+
+.h20 {
+  height: 20px;
+}
+
+.h30 {
+  height: 30px;
+}
+
+.h40 {
+  height: 30px;
+}
+
+.h50 {
+  height: 50px;
+}
+
+.h60 {
+  height: 50px;
+}
+
+.h80 {
+  height: 80px;
+}
+
+.h160 {
+  height: 160px;
+}
+
+.h200 {
+  height: 200px;
+}
+
+// margin
+.m5 {
+  margin: 5px;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.m15 {
+  margin: 15px;
+}
+
+.m20 {
+  margin: 20px;
+}
+
+// margin-top
+.mt5 {
+  margin-top: 5px;
+}
+.mt8{
+  margin-top: 8px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+.mt20f{
+  margin-top: -20px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+.mt55 {
+  margin-top: 55px;
+}
+.mt65 {
+  margin-top: 65px;
+}
+.mt70 {
+  margin-top: 70px;
+}
+.mt95 {
+  margin-top: 95px;
+}
+.mt100 {
+  margin-top: 100px;
+}
+
+.mt120 {
+  margin-top: 300px;
+}
+
+// margin-right
+.mr-5 {
+  margin-right: -5px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mr80 {
+  margin-right: 80px;
+}
+.ml20f {
+  margin-right: -20px;
+}
+.mr200{
+  margin-right: 200px;
+}
+// margin-left
+.ml5 {
+  margin-left: 5px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml10f {
+  margin-left: -10px;
+}
+
+.ml14f {
+  margin-left: -14px;
+}
+.ml50f{
+  margin-left: -50px;
+}
+.ml105f {
+  margin-left: -105px;
+}
+
+.ml20f {
+  margin-left: -20px;
+}
+
+.ml90f {
+  margin-left: -90px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml25 {
+  margin-left: 25px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.ml45 {
+  margin-left: 45px;
+}
+
+.ml50 {
+  margin-left: 58px;
+}
+
+.ml60 {
+  margin-left: 60px;
+}
+
+.ml65 {
+  margin-left: 65px;
+}
+
+.ml70 {
+  margin-left: 70px;
+}
+
+.ml75 {
+  margin-left: 75px;
+}
+
+.ml80 {
+  margin-left: 80px;
+}
+
+.ml85 {
+  margin-left: 85px;
+}
+
+.ml90 {
+  margin-left: 90px;
+}
+
+.ml100 {
+  margin-left: 100px;
+}
+
+.ml105 {
+  margin-left: 105px;
+}
+
+.ml120 {
+  margin-left: 120px;
+}
+
+.ml140 {
+  margin-left: 140px;
+}
+
+.ml150 {
+  margin-left: 150px;
+}
+
+.ml230 {
+  margin-left: 230px;
+}
+
+//修改开奖号码确认按钮居中
+.ml220 {
+  margin-left: 220px;
+}
+
+.ml80 {
+  margin-left: 80px;
+}
+
+// margin-bottom
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+// padding
+.p5 {
+  padding: 5px;
+}
+
+.p8 {
+  padding: 8px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.p15 {
+  padding: 15px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+// padding-top
+
+.pt1 {
+  padding-top: 1px;
+}
+.pt5 {
+  padding-top: 5px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+.pt12{
+  padding-top: 12px;
+}
+.pt15 {
+  padding-top: 15px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+// padding-right
+.pr5 {
+  padding-right: 5px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr15 {
+  padding-right: 15px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.pr25 {
+  padding-right: 25px;
+}
+
+.pr30 {
+  padding-right: 30px;
+}
+
+// padding-bottom
+.pb2{
+  padding-bottom: 2px;
+}
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pb12 {
+  padding-bottom: 12px;
+}
+.pb15 {
+  padding-bottom: 15px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+// padding-left
+.pl4 {
+  padding-left: 4px;
+}
+
+.pl5 {
+  padding-left: 5px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl15 {
+  padding-left: 15px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pl25 {
+  padding-left: 25px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+.pl35 {
+  padding-left: 35px;
+}
+.pl60 {
+  padding-left: 60px;
+}
+
+// font-size
+.ft13 {
+  font-size: 13px;
+}
+
+.ft14 {
+  font-size: 14px;
+}
+
+.ft15 {
+  font-size: 15px;
+}
+
+.ft16 {
+  font-size: 16px;
+}
+
+.ft18 {
+  font-size: 18px;
+}
+
+.ft20 {
+  font-size: 20px;
+}
+
+.ft22 {
+  font-size: 22px;
+}
+
+
+
+// text-indent
+
+.ti4 {
+  text-indent: 4px;
+}
+
+.ti5 {
+  text-indent: 5px;
+}
+
+.ti6 {
+  text-indent: 6px;
+}
+
+.ti8 {
+  text-indent: 8px;
+}
+
+.ti10 {
+  text-indent: 10px;
+}
+
+.ti15 {
+  text-indent: 15px;
+}
+
+.ti20 {
+  text-indent: 20px;
+}
+
+.f6Color {
+  background-color: #f6f6f8;
+}
+
+.g66Color {
+  color: rgba(102, 102, 102, 0.6);
+}
+
+.brN{
+  border-right: none;
+}
+.bbN{
+  border-bottom: none;
+}
+.btN{
+  border-top: none;
+}
+
+// 标准色border
+.b {
+  border: 1px solid @tableBorderColor;
+}
+
+.bt {
+  border-top: 1px solid @tableBorderColor;
+}
+
+.br {
+  border-right: 1px solid @tableBorderColor;
+}
+
+.bb {
+  border-bottom: 1px solid @tableBorderColor;
+}
+
+.bl {
+  border-left: 1px solid @tableBorderColor;
+}
+
+.btl {
+  border-top: 1px solid @tableBorderColor;
+  border-left: 1px solid @tableBorderColor;
+}
+
+.bInput {
+  border: 1px solid @inputBorderColor
+}
+.c3Color{
+  color:#c3c3c3;
+}
+
+// iconfont
+.iconfont {
+  cursor: pointer;
+}
+
+// 常用颜色字体，颜色
+.blue-font {
+  color: #2D8CF0;
+  cursor: pointer;
+}
+
+.green-font {
+  color: #19be6b;
+}
+
+// .f-color {
+//   color: #808080;
+// }
+.f-color {
+  color: #666666;
+}
+
+.blue-font-nc {
+  color: #2D8CF0;
+}
+
+.bg-ea {
+  background-color: #eaeaea;
+}
+
+.gray-font {
+  color: #B3B3B3;
+}
+
+// .gay {
+//   color: #808080;
+// }
+.gay {
+  color: #666666;
+}
+
+.bb-color {
+  color: #2D8CF0;
+}
+
+.red-font {
+  color: #FF2626;
+}
+
+.white-font {
+  color: #ffffff;
+}
+
+
+// 背景颜色
+.bg-gry {
+  background-color: #F6F6F8;
+}
+
+.bgSend {
+  background-color: #2D8CF0;
+}
+
+.bgOrange {
+  background-color: #ffad91;
+}
+
+.bgGreen {
+  background-color: #82db9b;
+}
+
+.bgBule {
+  background-color: #91acff;
+}
+
+.bgPurple {
+  background-color: #d291ff;
+}
+
+.gray-bg {
+  background-color: rgba(177, 173, 173, .5);
+}
+
+.f6f8-bg {
+  background: #f6f6f8;
+}
+//新的按钮颜色
+.oldColor{
+  color:#2D8CF0;
+	border-color:#2D8CF0;
+}
+// flex布局
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row
+}
+
+.flex-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column
+}
+
+// 超出省略号
+.text-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; //要显示几行,需要高度和宽度。
+  -webkit-box-orient: vertical;
+}
+
+.word-break {
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+//按钮圆弧
+.bd {
+  border-radius: 5px;
+}
+
+//水平居中
+.txt-a {
+  text-align: center;
+}
+
+.txt-r {
+  text-align: right;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.db {
+  display: block;
+}
+
+//表格的更多 样式
+.h32 {
+  height: 32px;
+  line-height: 32px;
+}
+
+.w82 {
+  width: 82px;
+}
+
+.slect260 {
+  width: 260px;
+  height: 36px;
+}
+
+//蓝色边框
+.blue-bd {
+  border: 1px solid @btnColor;
+}
+
+.blueBg {
+  background-color: @btnColor;
+}
+
+// 文本居中
+.center {
+  text-align: center;
+}
+
+//字体加粗
+.font-bold {
+  font-weight: bolder;
+}
+
+.h50x {
+  height: 50px;
+}
